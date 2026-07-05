@@ -11,11 +11,11 @@
  */
 
 import { useState } from "react";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { useMyAppointments, useBookAppointment, useCancelAppointment } from "@/frontend/lib/hooks/useAppointments";
-import { useDoctors } from "@/frontend/lib/hooks/useDoctors";
-import { formatDate, getInitials, getErrorMessage } from "@/frontend/lib/utils";
-import type { Appointment, AppointmentStatus } from "@/frontend/types";
+import { useToast } from "@/components/ui/Toast";
+import { useMyAppointments, useBookAppointment, useCancelAppointment } from "@/lib/hooks/useAppointments";
+import { useDoctors } from "@/lib/hooks/useDoctors";
+import { formatDate, getInitials, getErrorMessage } from "@/lib/utils";
+import type { Appointment, AppointmentStatus } from "@/types";
 
 // Sort: Scheduled first → then Completed/Cancelled, newest date first
 function sortAppointments(list: Appointment[]): Appointment[] {

@@ -1,8 +1,8 @@
-import type { Patient } from "@/frontend/types";
-import { Button } from "@/frontend/components/ui/Button";
-import { Card } from "@/frontend/components/ui/Card";
-import { Badge } from "@/frontend/components/ui/Badge";
-import { BackButton } from "@/frontend/components/ui/PageHeader";
+import type { Patient } from "@/types";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { BackButton } from "@/components/ui/PageHeader";
 
 type Props = {
   patient: Patient;

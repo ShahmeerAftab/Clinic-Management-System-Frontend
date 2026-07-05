@@ -1,7 +1,7 @@
-import type { Appointment, Patient, PopulatedPatient } from "@/frontend/types";
-import { Button } from "@/frontend/components/ui/Button";
-import { StatusBadge } from "@/frontend/components/ui/Badge";
-import { EmptyState } from "@/frontend/components/ui/PageHeader";
+import type { Appointment, Patient, PopulatedPatient } from "@/types";
+import { Button } from "@/components/ui/Button";
+import { StatusBadge } from "@/components/ui/Badge";
+import { EmptyState } from "@/components/ui/PageHeader";
 
 // Turn an ISO date string into a friendly "04 Jul 2026" format for display.
 function formatDate(dateStr: string): string {

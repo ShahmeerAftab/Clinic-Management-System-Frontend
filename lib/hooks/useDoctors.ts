@@ -4,7 +4,7 @@
  */
 
 import { useQuery } from "@tanstack/react-query";
-import * as api from "@/frontend/lib/client/api";
+import * as api from "@/lib/client/api";
 
 /** Get all users with role=doctor (used in booking/appointment forms) */
 export function useDoctors() {

@@ -13,9 +13,9 @@
  *   - This-week trend   (bar chart, last 7 days)
  */
 
-import { useDashboardStats } from "@/frontend/lib/hooks/useStats";
-import { useAllAppointments } from "@/frontend/lib/hooks/useAppointments";
-import type { Appointment } from "@/frontend/types";
+import { useDashboardStats } from "@/lib/hooks/useStats";
+import { useAllAppointments } from "@/lib/hooks/useAppointments";
+import type { Appointment } from "@/types";
 import {
   BarChart,
   Bar,

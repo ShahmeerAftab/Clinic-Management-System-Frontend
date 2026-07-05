@@ -4,7 +4,7 @@
  */
 
 import { useQuery } from "@tanstack/react-query";
-import * as api from "@/frontend/lib/client/api";
+import * as api from "@/lib/client/api";
 
 /** Fetch system-wide dashboard stats (total patients, appointments, etc.) */
 export function useDashboardStats() {

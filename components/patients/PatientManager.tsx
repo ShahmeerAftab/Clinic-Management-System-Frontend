@@ -1,17 +1,17 @@
 "use client";
 
-import type { Patient } from "@/frontend/types";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { ConfirmModal } from "@/frontend/components/ui/Modal";
-import { SectionLoader } from "@/frontend/components/ui/Spinner";
-import { getErrorMessage } from "@/frontend/lib/utils";
+import type { Patient } from "@/types";
+import { useToast } from "@/components/ui/Toast";
+import { ConfirmModal } from "@/components/ui/Modal";
+import { SectionLoader } from "@/components/ui/Spinner";
+import { getErrorMessage } from "@/lib/utils";
 import { useState } from "react";
 import {
   useAllPatients,
   useCreatePatient,
   useUpdatePatient,
   useDeletePatient,
-} from "@/frontend/lib/hooks/usePatients";
+} from "@/lib/hooks/usePatients";
 import PatientList from "./PatientList";
 import PatientForm from "./PatientForm";
 import PatientView from "./PatientView";

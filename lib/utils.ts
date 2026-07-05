@@ -1,7 +1,7 @@
 // Shared pure utility functions — safe to import anywhere
 
 import axios from "axios";
-import type { PopulatedPatient } from "@/frontend/types";
+import type { PopulatedPatient } from "@/types";
 
 /** Format "2024-03-15T..." → "15 Mar 2024" */
 export function formatDate(dateStr: string): string {

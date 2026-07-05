@@ -7,9 +7,9 @@
  * Patients can only VIEW prescriptions (doctors create them).
  */
 
-import { usePrescriptions } from "@/frontend/lib/hooks/usePrescriptions";
-import { formatDate } from "@/frontend/lib/utils";
-import type { Prescription, Medicine } from "@/frontend/types";
+import { usePrescriptions } from "@/lib/hooks/usePrescriptions";
+import { formatDate } from "@/lib/utils";
+import type { Prescription, Medicine } from "@/types";
 
 // ─── Medicine chip ─────────────────────────────────────────────────────────────
 function MedicineChip({ med }: { med: Medicine }) {

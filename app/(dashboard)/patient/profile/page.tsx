@@ -10,9 +10,9 @@
  */
 
 import { useState } from "react";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { useMyProfile, useUpdateMyProfile } from "@/frontend/lib/hooks/useProfile";
-import { getErrorMessage } from "@/frontend/lib/utils";
+import { useToast } from "@/components/ui/Toast";
+import { useMyProfile, useUpdateMyProfile } from "@/lib/hooks/useProfile";
+import { getErrorMessage } from "@/lib/utils";
 
 const GENDER_OPTIONS = ["Male", "Female", "Other", "Prefer not to say"];
 

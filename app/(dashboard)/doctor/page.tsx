@@ -1,8 +1,8 @@
 "use client";
 
-import { useDashboardStats } from "@/frontend/lib/hooks/useStats";
-import { useAllAppointments } from "@/frontend/lib/hooks/useAppointments";
-import { getPatientName } from "@/frontend/lib/utils";
+import { useDashboardStats } from "@/lib/hooks/useStats";
+import { useAllAppointments } from "@/lib/hooks/useAppointments";
+import { getPatientName } from "@/lib/utils";
 
 // ---------- helpers ----------
 const statusStyles: Record<string, string> = {

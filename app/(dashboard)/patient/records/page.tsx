@@ -9,9 +9,9 @@
  */
 
 import { useState } from "react";
-import { useHealthRecords } from "@/frontend/lib/hooks/useHealthRecords";
-import { formatDate } from "@/frontend/lib/utils";
-import type { HealthRecord, RecordType } from "@/frontend/types";
+import { useHealthRecords } from "@/lib/hooks/useHealthRecords";
+import { formatDate } from "@/lib/utils";
+import type { HealthRecord, RecordType } from "@/types";
 
 // ─── Style map by record type ─────────────────────────────────────────────────
 const typeStyles: Record<

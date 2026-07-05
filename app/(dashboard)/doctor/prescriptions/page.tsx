@@ -13,11 +13,11 @@
  */
 
 import { useState } from "react";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { usePrescriptions, useCreatePrescription, useDeletePrescription } from "@/frontend/lib/hooks/usePrescriptions";
-import { useAllPatients } from "@/frontend/lib/hooks/usePatients";
-import { formatDate, getInitials, getErrorMessage } from "@/frontend/lib/utils";
-import type { Prescription, Medicine } from "@/frontend/types";
+import { useToast } from "@/components/ui/Toast";
+import { usePrescriptions, useCreatePrescription, useDeletePrescription } from "@/lib/hooks/usePrescriptions";
+import { useAllPatients } from "@/lib/hooks/usePatients";
+import { formatDate, getInitials, getErrorMessage } from "@/lib/utils";
+import type { Prescription, Medicine } from "@/types";
 
 function getPatientName(patientId: Prescription["patientId"]): string {
   if (typeof patientId === "object" && patientId !== null) return patientId.name;

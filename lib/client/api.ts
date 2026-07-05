@@ -7,7 +7,7 @@ import type {
   Patient,
   PatientDashboardStats,
   Prescription,
-} from "@/frontend/types";
+} from "@/types";
 
 // ─── Types not in @/types ─────────────────────────────────────────────────────
 

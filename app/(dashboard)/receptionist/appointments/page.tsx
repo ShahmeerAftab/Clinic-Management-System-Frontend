@@ -1,4 +1,4 @@
-import AppointmentManager from "@/frontend/components/appointments/AppointmentManager";
+import AppointmentManager from "@/components/appointments/AppointmentManager";
 
 export default function ReceptionistAppointmentsPage() {
   return (

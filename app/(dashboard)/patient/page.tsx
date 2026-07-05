@@ -7,9 +7,9 @@
  * Shows: upcoming count, health records, prescriptions, today's visits.
  */
 
-import { formatDate } from "@/frontend/lib/utils";
-import { usePatientDashboard } from "@/frontend/lib/hooks/useStats";
-import type { Appointment } from "@/frontend/types";
+import { formatDate } from "@/lib/utils";
+import { usePatientDashboard } from "@/lib/hooks/useStats";
+import type { Appointment } from "@/types";
 
 // ─── Stat card component ─────────────────────────────────────────────────────
 function StatCard({

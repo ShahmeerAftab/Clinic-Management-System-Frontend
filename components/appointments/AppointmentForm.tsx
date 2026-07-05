@@ -1,9 +1,9 @@
-import type { Patient } from "@/frontend/types";
-import { Button } from "@/frontend/components/ui/Button";
-import { Input, Textarea, Select } from "@/frontend/components/ui/Input";
-import { Card } from "@/frontend/components/ui/Card";
-import { BackButton } from "@/frontend/components/ui/PageHeader";
-import PatientAutocomplete from "@/frontend/components/ui/PatientAutocomplete";
+import type { Patient } from "@/types";
+import { Button } from "@/components/ui/Button";
+import { Input, Textarea, Select } from "@/components/ui/Input";
+import { Card } from "@/components/ui/Card";
+import { BackButton } from "@/components/ui/PageHeader";
+import PatientAutocomplete from "@/components/ui/PatientAutocomplete";
 
 interface DoctorOption {
   _id: string;

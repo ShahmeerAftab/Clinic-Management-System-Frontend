@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import type { Patient } from "@/frontend/types";
+import type { Patient } from "@/types";
 
 type Props = {
   patients: Patient[];

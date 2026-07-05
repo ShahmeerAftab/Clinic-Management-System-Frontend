@@ -2,8 +2,8 @@
 
 import { useState, useRef, useEffect, FormEvent } from "react";
 import { useMutation } from "@tanstack/react-query";
-import * as api from "@/frontend/lib/client/api";
-import { getErrorMessage } from "@/frontend/lib/utils";
+import * as api from "@/lib/client/api";
+import { getErrorMessage } from "@/lib/utils";
 
 /* ── Types ── */
 type Role = "user" | "bot";

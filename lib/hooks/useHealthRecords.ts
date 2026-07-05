@@ -4,8 +4,8 @@
  */
 
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import * as api from "@/frontend/lib/client/api";
-import type { HealthRecord } from "@/frontend/types";
+import * as api from "@/lib/client/api";
+import type { HealthRecord } from "@/types";
 
 /** Get health records (patient sees own, doctor/admin sees all) */
 export function useHealthRecords() {

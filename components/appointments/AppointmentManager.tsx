@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import type { PopulatedPatient } from "@/frontend/types";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { ConfirmModal } from "@/frontend/components/ui/Modal";
+import type { PopulatedPatient } from "@/types";
+import { useToast } from "@/components/ui/Toast";
+import { ConfirmModal } from "@/components/ui/Modal";
 import {
   useAllAppointments,
   useCreateAppointment,
   useUpdateAppointment,
   useDeleteAppointment,
-} from "@/frontend/lib/hooks/useAppointments";
-import { useAllPatients } from "@/frontend/lib/hooks/usePatients";
-import { useDoctors } from "@/frontend/lib/hooks/useDoctors";
+} from "@/lib/hooks/useAppointments";
+import { useAllPatients } from "@/lib/hooks/usePatients";
+import { useDoctors } from "@/lib/hooks/useDoctors";
 import AppointmentList from "./AppointmentList";
 import AppointmentForm from "./AppointmentForm";
 

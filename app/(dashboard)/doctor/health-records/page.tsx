@@ -11,11 +11,11 @@
  */
 
 import { useState } from "react";
-import { useToast } from "@/frontend/components/ui/Toast";
-import { useHealthRecords, useCreateHealthRecord, useDeleteHealthRecord } from "@/frontend/lib/hooks/useHealthRecords";
-import { useAllPatients } from "@/frontend/lib/hooks/usePatients";
-import { formatDate, getInitials, getErrorMessage } from "@/frontend/lib/utils";
-import type { HealthRecord, RecordType } from "@/frontend/types";
+import { useToast } from "@/components/ui/Toast";
+import { useHealthRecords, useCreateHealthRecord, useDeleteHealthRecord } from "@/lib/hooks/useHealthRecords";
+import { useAllPatients } from "@/lib/hooks/usePatients";
+import { formatDate, getInitials, getErrorMessage } from "@/lib/utils";
+import type { HealthRecord, RecordType } from "@/types";
 
 // ─── Record type options ──────────────────────────────────────────────────────
 const RECORD_TYPES: RecordType[] = [
