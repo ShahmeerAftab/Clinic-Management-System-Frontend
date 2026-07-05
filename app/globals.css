@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F5F5;
+  --foreground: #2C3E50;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ── Aqua Marine Design System ── */
+@theme {
+  --color-aq:         #7FFFD4;
+  --color-aq-dark:    #5BCDB5;
+  --color-aq-darker:  #3BA898;
+  --color-aq-light:   #B2FFE8;
+  --color-aq-faint:   #E8FFF8;
+  --color-sidebar:    #1E2A38;
+  --color-sidebar-hv: #253647;
+  --color-ink:        #2C3E50;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, sans-serif;
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #7FFFD4; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #5BCDB5; }
+
+/* ── Skeleton shimmer ── */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── Toast animations ── */
+@keyframes toast-in {
+  from { transform: translateX(calc(100% + 1rem)); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes toast-out {
+  from { transform: translateX(0); opacity: 1; }
+  to   { transform: translateX(calc(100% + 1rem)); opacity: 0; }
+}
+.toast-enter { animation: toast-in  0.35s cubic-bezier(0.21, 1.02, 0.73, 1) forwards; }
+.toast-leave  { animation: toast-out 0.28s ease-in forwards; }
+
+/* ── Page entrance ── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.35s ease-out forwards; }
+
+/* ── Spin ── */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin { animation: spin 0.8s linear infinite; }
+
+/* ── Aquamarine glow on focused inputs ── */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
